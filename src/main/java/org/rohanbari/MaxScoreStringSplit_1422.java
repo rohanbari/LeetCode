@@ -17,7 +17,7 @@ public class MaxScoreStringSplit_1422 {
      * @param s String to be tested
      * @return Required maximum score
      */
-    public static int maxScore(String s) {
+    private static int maxScore(String s) {
         int maxScore = 0;
 
         int leftZeros = 0;

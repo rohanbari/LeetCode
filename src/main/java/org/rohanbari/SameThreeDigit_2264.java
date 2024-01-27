@@ -18,7 +18,7 @@ public class SameThreeDigit_2264 {
      * @param num The number to be tested on
      * @return Maximum 3-same-digit
      */
-    public static String process(final String num) {
+    private static String process(final String num) {
         String[] subStrings = new String[]{
                 "000", "111", "222", "333", "444",
                 "555", "666", "777", "888", "999"

@@ -15,6 +15,32 @@ public class Main {
      * @param args System arguments
      */
     public static void main(String[] args) {
-        System.out.println("Right now, there is no problem I am working on.");
+        System.out.println("Last problem solved: 20");
     }
+
+//    /**
+//     * My attempt.
+//     *
+//     * @param s The string
+//     * @return If it has a pair of strings
+//     */
+//    public static boolean isValidParentheses(final String s) {
+//        if (s.contains("(")) {
+//            if (!s.contains("()")) {
+//                return false;
+//            }
+//        }
+//
+//        if (s.contains("{")) {
+//            if (!s.contains("{}")) {
+//                return false;
+//            }
+//        }
+//
+//        if (s.contains("[")) {
+//            return s.contains("[]");
+//        }
+//
+//        return true;
+//    }
 }
