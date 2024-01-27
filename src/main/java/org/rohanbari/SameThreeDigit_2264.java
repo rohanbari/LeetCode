@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2023 Rohan Bari <rohanbari@outlook.com>
+ * Copyright (c) 2023-2024 Rohan Bari <rohanbari@outlook.com>
  */
 
 package org.rohanbari;
@@ -11,7 +11,7 @@ import java.util.Collections;
  * 2264. Largest 3-Same-Digit Number in String
  */
 public class SameThreeDigit_2264 {
-    
+
     /**
      * The 3-same-digit processor.
      *

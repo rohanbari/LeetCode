@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2023 Rohan Bari <rohanbari@outlook.com>
+ * Copyright (c) 2023-2024 Rohan Bari <rohanbari@outlook.com>
  */
 
 package org.rohanbari;
