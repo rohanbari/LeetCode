@@ -2,7 +2,7 @@
  * Copyright (c) 2023-2024 Rohan Bari <rohanbari@outlook.com>
  */
 
-package org.rohanbari;
+package org.rohanbari.code;
 
 /**
  * 1422. Maximum Score After Splitting a String

@@ -2,7 +2,7 @@
  * Copyright (c) 2024 Rohan Bari <rohanbari@outlook.com>
  */
 
-package org.rohanbari;
+package org.rohanbari.code;
 
 import java.util.Stack;
 
@@ -31,4 +31,30 @@ public class ValidParentheses_20 {
 
         return stack.isEmpty();
     }
+
+//        /**
+//     * My attempt.
+//     *
+//     * @param s The string
+//     * @return If it has a pair of strings
+//     */
+//    public static boolean isValidParentheses(final String s) {
+//        if (s.contains("(")) {
+//            if (!s.contains("()")) {
+//                return false;
+//            }
+//        }
+//
+//        if (s.contains("{")) {
+//            if (!s.contains("{}")) {
+//                return false;
+//            }
+//        }
+//
+//        if (s.contains("[")) {
+//            return s.contains("[]");
+//        }
+//
+//        return true;
+//    }
 }

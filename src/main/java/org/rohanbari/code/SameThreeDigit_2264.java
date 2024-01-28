@@ -2,7 +2,7 @@
  * Copyright (c) 2023-2024 Rohan Bari <rohanbari@outlook.com>
  */
 
-package org.rohanbari;
+package org.rohanbari.code;
 
 import java.util.ArrayList;
 import java.util.Collections;
