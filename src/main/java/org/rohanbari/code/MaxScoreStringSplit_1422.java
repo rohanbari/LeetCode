@@ -7,7 +7,7 @@ package org.rohanbari.code;
 /**
  * 1422. Maximum Score After Splitting a String
  */
-public class MaxScoreStringSplit_1422 {
+class MaxScoreStringSplit_1422 {
 
     /**
      * Evaluates the max score based on:
@@ -17,7 +17,7 @@ public class MaxScoreStringSplit_1422 {
      * @param s String to be tested
      * @return Required maximum score
      */
-    private static int maxScore(String s) {
+    public static int maxScore(String s) {
         int maxScore = 0;
 
         int leftZeros = 0;

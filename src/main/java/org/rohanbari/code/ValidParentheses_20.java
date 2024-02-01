@@ -6,7 +6,7 @@ package org.rohanbari.code;
 
 import java.util.Stack;
 
-public class ValidParentheses_20 {
+class ValidParentheses_20 {
 
     /**
      * Checks if the pairs of parentheses are valid or not.
@@ -14,7 +14,7 @@ public class ValidParentheses_20 {
      * @param s The string to be checked
      * @return Validation of pair(s)
      */
-    private static boolean isValid(final String s) {
+    public static boolean isValid(final String s) {
         Stack<Character> stack = new Stack<>();
 
         for (char ch : s.toCharArray()) {

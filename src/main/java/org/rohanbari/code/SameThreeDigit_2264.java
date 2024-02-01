@@ -10,7 +10,7 @@ import java.util.Collections;
 /**
  * 2264. Largest 3-Same-Digit Number in String
  */
-public class SameThreeDigit_2264 {
+class SameThreeDigit_2264 {
 
     /**
      * The 3-same-digit processor.
@@ -18,7 +18,7 @@ public class SameThreeDigit_2264 {
      * @param num The number to be tested on
      * @return Maximum 3-same-digit
      */
-    private static String process(final String num) {
+    public static String process(final String num) {
         String[] subStrings = new String[]{
                 "000", "111", "222", "333", "444",
                 "555", "666", "777", "888", "999"

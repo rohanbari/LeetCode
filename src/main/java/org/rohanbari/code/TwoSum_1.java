@@ -7,7 +7,7 @@ package org.rohanbari.code;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TwoSum_1 {
+class TwoSum_1 {
 
     /**
      * This function returns an array of an integer pair containing the indices
@@ -17,7 +17,7 @@ public class TwoSum_1 {
      * @param target The desired result
      * @return The array of two-indices pairs
      */
-    private static int[] twoSum(int[] nums, int target) {
+    public static int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {

@@ -4,7 +4,7 @@
 
 package org.rohanbari.code;
 
-public class RemoveDuplicates_26 {
+class RemoveDuplicates_26 {
 
     /**
      * Removes the duplicates from an array and returns the size of the newly
@@ -13,7 +13,7 @@ public class RemoveDuplicates_26 {
      * @param nums The array to be compressed
      * @return Number of unique elements
      */
-    private static int removeDuplicates(int[] nums) {
+    public static int removeDuplicates(int[] nums) {
         int n = 1;
 
         for (int i = 1; i < nums.length; i++) {
