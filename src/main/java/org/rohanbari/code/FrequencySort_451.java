@@ -29,7 +29,7 @@ class FrequencySort_451 {
 
         String result = "";
         for (int i = 0; i < charByFrequency.size(); i++) {
-            result = charByFrequency.indexOf(i) + result;
+            result += String.valueOf(charByFrequency.get(i));
         }
 
         return result;

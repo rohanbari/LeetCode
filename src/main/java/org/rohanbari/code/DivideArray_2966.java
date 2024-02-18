@@ -24,15 +24,11 @@ class DivideArray_2966 {
         // This container will be used to store the array of arrays
         List<List<Integer>> lists = new ArrayList<>();
 
-        // Shall be used to account the number of groups
-        int groupIdx = 0;
         for (int i = 0; i < size; i += 3) {
             // Measuring the difference criteria
             if (i + 2 < size && nums[i + 2] - nums[i] <= k) {
                 // Putting the triad at once
                 lists.add(Arrays.asList(nums[i], nums[i + 1], nums[i + 2]));
-                // Counting the number of groups formed
-                groupIdx++;
             } else {
                 // In case the difference between any two element is not less
                 // than or equal to k, an empty list is returned

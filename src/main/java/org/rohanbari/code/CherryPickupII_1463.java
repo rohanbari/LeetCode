@@ -5,7 +5,7 @@
 package org.rohanbari.code;
 
 class CherryPickupII_1463 {
-    
+
     public static int cherryPickup(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;
@@ -16,7 +16,8 @@ class CherryPickupII_1463 {
     }
 
     private static int move(int[][] grid, int m, int n, int r, int c1, int c2, Integer[][][] dp) {
-        if (r == m) return 0;
+        if (r == m)
+            return 0;
 
         if (dp[r][c1][c2] != null)
             return dp[r][c1][c2];

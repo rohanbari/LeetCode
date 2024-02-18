@@ -12,7 +12,7 @@ Please feel free to make any changes to my code.
 ## Coding Environment
 
 - **System.** Windows 10 22H2 64-bit
-- **IDE/Editor.** IntelliJ IDEA 2023.x Ultimate
+- **IDE/Editor.** VS Code / IntelliJ IDEA 2023.x Ultimate
 - **Compiler.** javac 17.0.8
 
 ## Contributing
