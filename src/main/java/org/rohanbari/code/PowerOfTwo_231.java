@@ -14,29 +14,14 @@
  limitations under the License.
  */
 
-package org.rohanbari;
+package org.rohanbari.code;
 
-import java.util.ArrayList;
-import java.util.List;
-
-/**
- * This file is dedicated to the problem I am currently working on.
- */
-public class Main {
-
-    /**
-     * The main method.
-     *
-     * @param args System arguments
-     */
-    public static void main(String[] args) {
-        // int[] testCase = { 2, 3, 6, 7 };
-        // System.out.println(combinationSum(testCase, 7));
-
-        System.out.println(isPowerOfTwo(536870912));
+class PowerOfTwo_231 {
+    public static boolean isPowerOfTwo_1(int n) {
+        return (n & (n - 1)) == 0;
     }
 
-    public static boolean isPowerOfTwo(int n) {
+    public static boolean isPowerOfTwo_MyApproach(int n) {
         if (n <= 0)
             return false;
 
