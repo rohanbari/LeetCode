@@ -14,21 +14,22 @@
  limitations under the License.
  */
 
-package org.rohanbari;
+package org.rohanbari.code;
 
-import java.util.Arrays;
-
-/**
- * This file is dedicated to the problem I am currently working on.
- */
-public class Main {
+public class MissingNumber_268 {
 
     /**
-     * The main method.
-     *
-     * @param args System arguments
+     * Finds the only missing number in an array in O(1).
+     * 
+     * @param nums The array
+     * @return The missing number
      */
-    public static void main(String[] args) {
-        System.out.println("Latest solved: 268");
+    public static int missingNumber(int[] nums) {
+        int sumArray = nums.length * (nums.length + 1) / 2;
+
+        for (int num : nums)
+            sumArray -= num;
+
+        return sumArray;
     }
 }
