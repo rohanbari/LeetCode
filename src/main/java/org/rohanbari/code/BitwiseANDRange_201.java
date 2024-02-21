@@ -14,19 +14,19 @@
  limitations under the License.
  */
 
-package org.rohanbari;
+package org.rohanbari.code;
 
-/**
- * This file is dedicated to the problem I am currently working on.
- */
-public class Main {
+class BitwiseANDRange_201 {
 
-    /**
-     * The main method.
-     *
-     * @param args System arguments
-     */
-    public static void main(String[] args) {
-        System.out.println("Latest solved: 201");
+    public static int rangeBitwiseAnd(int left, int right) {
+        // Since bitwise-AND of zero to any number is zero
+        if (left == 0)
+            return 0;
+
+        // Finding the lowest common denominator
+        while (right > left)
+            right &= right - 1;
+
+        return right & left;
     }
 }
