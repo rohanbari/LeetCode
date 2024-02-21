@@ -14,19 +14,15 @@
  limitations under the License.
  */
 
-package org.rohanbari;
+package org.rohanbari.code;
 
-/**
- * This file is dedicated to the problem I am currently working on.
- */
-public class Main {
+class RepeatedSubstring_459 {
+    
+    public static boolean repeatedSubstringPattern(String s) {
+        if (s.length() == 1)
+            return true;
 
-    /**
-     * The main method.
-     *
-     * @param args System arguments
-     */
-    public static void main(String[] args) {
-        System.out.println("Latest solved: 459");
+        String newStr = s + s;
+        return newStr.substring(1, newStr.length() - 1).contains(s);
     }
 }
