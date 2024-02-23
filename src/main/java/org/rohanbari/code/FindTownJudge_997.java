@@ -14,19 +14,23 @@
  limitations under the License.
  */
 
-package org.rohanbari;
+package org.rohanbari.code;
 
-/**
- * This file is dedicated to the problem I am currently working on.
- */
-public class Main {
+class FindTownJudge_997 {
+     
+     public static int findJudge(int n, int[][] trust) {
+          int[] counter = new int[n + 1];
 
-    /**
-     * The main method.
-     *
-     * @param args System arguments
-     */
-    public static void main(String[] args) {
-        System.out.println("Latest solved: 997");
-    }
+          for (int i = 0; i < trust.length; i++) {
+               counter[trust[i][0]]--;
+               counter[trust[i][1]]++;
+          }
+
+          for (int i = 1; i <= n; i++) {
+               if (counter[i] == n - 1)
+                    return i;
+          }
+
+          return -1;
+     }
 }
