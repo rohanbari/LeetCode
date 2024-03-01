@@ -14,18 +14,22 @@
  limitations under the License.
  */
 
-package org.rohanbari.code;
+package org.rohanbari.code.February;
 
-class PowerOfTwo_231 {
-    public static boolean isPowerOfTwo_1(int n) {
-        return (n & (n - 1)) == 0;
-    }
+public class MissingNumber_268 {
 
-    public static boolean isPowerOfTwo_MyApproach(int n) {
-        if (n <= 0)
-            return false;
+    /**
+     * Finds the only missing number in an array in O(1).
+     * 
+     * @param nums The array
+     * @return The missing number
+     */
+    public static int missingNumber(int[] nums) {
+        int sumArray = nums.length * (nums.length + 1) / 2;
 
-        double log2num = Math.log(n) / Math.log(2);
-        return Math.abs(log2num - (int) log2num) < 0.00000000001;
+        for (int num : nums)
+            sumArray -= num;
+
+        return sumArray;
     }
 }

@@ -14,15 +14,18 @@
  limitations under the License.
  */
 
-package org.rohanbari.code;
+package org.rohanbari.code.February;
 
-class RepeatedSubstring_459 {
-    
-    public static boolean repeatedSubstringPattern(String s) {
-        if (s.length() == 1)
-            return true;
+class PowerOfTwo_231 {
+    public static boolean isPowerOfTwo_1(int n) {
+        return (n & (n - 1)) == 0;
+    }
 
-        String newStr = s + s;
-        return newStr.substring(1, newStr.length() - 1).contains(s);
+    public static boolean isPowerOfTwo_MyApproach(int n) {
+        if (n <= 0)
+            return false;
+
+        double log2num = Math.log(n) / Math.log(2);
+        return Math.abs(log2num - (int) log2num) < 0.00000000001;
     }
 }

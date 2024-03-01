@@ -14,23 +14,19 @@
  limitations under the License.
  */
 
-package org.rohanbari.code;
+package org.rohanbari.code.February;
 
-class FindTownJudge_997 {
-     
-     public static int findJudge(int n, int[][] trust) {
-          int[] counter = new int[n + 1];
+class BitwiseANDRange_201 {
 
-          for (int i = 0; i < trust.length; i++) {
-               counter[trust[i][0]]--;
-               counter[trust[i][1]]++;
-          }
+    public static int rangeBitwiseAnd(int left, int right) {
+        // Since bitwise-AND of zero to any number is zero
+        if (left == 0)
+            return 0;
 
-          for (int i = 1; i <= n; i++) {
-               if (counter[i] == n - 1)
-                    return i;
-          }
+        // Finding the lowest common denominator
+        while (right > left)
+            right &= right - 1;
 
-          return -1;
-     }
+        return right & left;
+    }
 }

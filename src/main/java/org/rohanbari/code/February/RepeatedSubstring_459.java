@@ -14,22 +14,15 @@
  limitations under the License.
  */
 
-package org.rohanbari.code;
+package org.rohanbari.code.February;
 
-public class MissingNumber_268 {
+class RepeatedSubstring_459 {
+    
+    public static boolean repeatedSubstringPattern(String s) {
+        if (s.length() == 1)
+            return true;
 
-    /**
-     * Finds the only missing number in an array in O(1).
-     * 
-     * @param nums The array
-     * @return The missing number
-     */
-    public static int missingNumber(int[] nums) {
-        int sumArray = nums.length * (nums.length + 1) / 2;
-
-        for (int num : nums)
-            sumArray -= num;
-
-        return sumArray;
+        String newStr = s + s;
+        return newStr.substring(1, newStr.length() - 1).contains(s);
     }
 }

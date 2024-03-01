@@ -2,7 +2,7 @@
  * Copyright (c) 2024 Rohan Bari <rohanbari@outlook.com>
  */
 
-package org.rohanbari.code;
+package org.rohanbari.code.February;
 
 class RearrangeArrayBySign_2149 {
 

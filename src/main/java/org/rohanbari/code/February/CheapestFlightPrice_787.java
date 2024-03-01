@@ -14,7 +14,7 @@
  limitations under the License.
  */
 
-package org.rohanbari.code;
+package org.rohanbari.code.February;
 
 import java.util.Arrays;
 
