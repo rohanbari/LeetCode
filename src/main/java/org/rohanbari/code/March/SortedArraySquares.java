@@ -14,21 +14,21 @@
  limitations under the License.
  */
 
-package org.rohanbari;
+package org.rohanbari.code.March;
 
 import java.util.Arrays;
 
 /**
- * This file is dedicated to the problem I am currently working on.
+ * 977. Squares of a Sorted Array
  */
-public class Main {
+class SortedArraySquares {
 
-    /**
-     * The main method.
-     *
-     * @param args System arguments
-     */
-    public static void main(String[] args) {
-        System.out.println("Latest solved: 977");
+    public int[] sortedSquares(int[] nums) {
+        for (int i = 0; i < nums.length; i++)
+            nums[i] = nums[i] * nums[i];
+
+        Arrays.sort(nums);
+
+        return nums;
     }
 }
