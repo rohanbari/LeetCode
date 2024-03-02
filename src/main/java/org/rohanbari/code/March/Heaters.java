@@ -16,25 +16,31 @@
 
 package org.rohanbari.code.March;
 
-import java.util.Arrays;
-
 /**
- * 977. Squares of a Sorted Array
+ * 475. Heaters
  */
-class SortedArraySquares {
+class Heaters {
 
     /**
-     * Returns an array with sorted square of numbers.
+     * Finds the minimum radius required to cover all houses to get heated.
      * 
-     * @param nums Numbers in any order
-     * @return Sorted squares
+     * @param houses  An array of houses
+     * @param heaters An array of heaters
+     * @return Minimum radius
      */
-    public int[] sortedSquares(int[] nums) {
-        for (int i = 0; i < nums.length; i++)
-            nums[i] = nums[i] * nums[i];
+    public int findRadius(int[] houses, int[] heaters) {
+        int radius = Integer.MIN_VALUE;
 
-        Arrays.sort(nums);
+        for (int i = 0; i < houses.length; i++) {
+            int minHouse = Integer.MAX_VALUE;
 
-        return nums;
+            for (int j = 0; j < heaters.length; j++)
+                minHouse = Math.min(Math.abs(heaters[j] - houses[i]), minHouse);
+
+            if (minHouse > radius)
+                radius = minHouse;
+        }
+
+        return radius;
     }
 }
