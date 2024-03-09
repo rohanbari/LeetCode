@@ -14,21 +14,29 @@
  limitations under the License.
  */
 
-package org.rohanbari;
-
-import java.util.Arrays;
+package org.rohanbari.code.March;
 
 /**
- * This file is dedicated to the problem I am currently working on.
+ * 283. Move Zeroes
  */
-public class Main {
+class MoveZeroes {
 
     /**
-     * The main method.
-     *
-     * @param args System arguments
+     * Moves all the zeroes to the right corner.
+     * 
+     * @param nums The array to be modified
      */
-    public static void main(String[] args) {
-        System.out.println("Latest solved: 66");
+    public void moveZeroes(int[] nums) {
+        int snowBall = 0;
+
+        for (int i = 0; i < nums.length; i++) {
+            if (nums[i] == 0)
+                snowBall++;
+            else if (snowBall > 0) {
+                int temp = nums[i];
+                nums[i] = 0;
+                nums[i - snowBall] = temp;
+            }
+        }
     }
 }
