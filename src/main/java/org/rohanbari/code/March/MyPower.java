@@ -14,20 +14,35 @@
  limitations under the License.
  */
 
-package org.rohanbari;
+package org.rohanbari.code.March;
 
 /**
- * This file is dedicated to the problem I am currently working on.
+ * 50. Pow(x, n)
  */
-public class Main {
+class MyPower {
 
     /**
-     * The main method.
-     *
-     * @param args System arguments
+     * Custom power function based on Divide and Conquer.
+     * 
+     * @param x Base
+     * @param n Index
+     * @return Result
      */
-    public static void main(String[] args) {
-        Main main = new Main();
-        System.out.println(main.toString());
+    public double myPow(double x, int n) {
+        if (n == 0)
+            return 1;
+        if (n == 1)
+            return x;
+
+        double temp = myPow(x * x, n / 2);
+
+        if (n % 2 == 0)
+            return temp;
+        else {
+            if (n > 0)
+                return x * temp;
+            else
+                return temp / x;
+        }
     }
 }
