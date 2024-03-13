@@ -14,19 +14,30 @@
  limitations under the License.
  */
 
-package org.rohanbari;
+package org.rohanbari.code.March;
 
 /**
- * This file is dedicated to the problem I am currently working on.
+ * 2485. Find the Pivot Integer
  */
-public class Main {
+public class PivotInteger {
 
     /**
-     * The main method.
-     *
-     * @param args System arguments
+     * Finds the index where sum(1->x) == sum(x->n).
+     * 
+     * @param n The final limit
+     * @return Equal pivot point
      */
-    public static void main(String[] args) {
-        System.out.println("Latest solved: 2485");
+    public int pivotInteger(int n) {
+        int sumLeft = n * (n + 1) / 2;
+        int sumRight = 0;
+
+        for (int i = 1; i <= n; i++) {
+            sumRight += i;
+            if (sumRight == (sumLeft - sumRight + i)) {
+                return i;
+            }
+        }
+
+        return -1;
     }
 }
