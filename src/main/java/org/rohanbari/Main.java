@@ -16,6 +16,10 @@
 
 package org.rohanbari;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * This file is dedicated to the problem I am currently working on.
  */
@@ -27,6 +31,6 @@ public class Main {
      * @param args System arguments
      */
     public static void main(String[] args) {
-        System.out.println("Latest solved: 238");
+        System.out.println("Latest solved: 39");
     }
 }
