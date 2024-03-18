@@ -27,6 +27,6 @@ public class Main {
      * @param args System arguments
      */
     public static void main(String[] args) {
-        System.out.println("Latest solved: 14");
+        System.out.println("Latest solved: 452");
     }
 }
