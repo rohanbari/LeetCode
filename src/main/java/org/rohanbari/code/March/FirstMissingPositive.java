@@ -19,7 +19,7 @@ package org.rohanbari.code.March;
 /**
  * 41. First Missing Positive
  */
-public class FirstMissingPositive {
+class FirstMissingPositive {
 
     /**
      * Finds the lowest missing positive integer from an array.
