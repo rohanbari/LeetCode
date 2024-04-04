@@ -14,19 +14,33 @@
  limitations under the License.
  */
 
-package org.rohanbari;
+package org.rohanbari.code.April;
 
 /**
- * This file is dedicated to the problem I am currently working on.
+ * 1614. Maximum Nesting Depth of the Parentheses
  */
-public class Main {
+public class MaximumNestedDepth {
 
     /**
-     * The main method.
-     *
-     * @param args System arguments
+     * Returns nesting depth of a string.
+     * 
+     * @param s The string
+     * @return Maximum nesting depth
      */
-    public static void main(String[] args) {
-        System.out.println("Latest solved: 1614");
+    public int maxDepth(String s) {
+        int counter = 0;
+        int maxCounter = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            if (s.charAt(i) == '(') {
+                counter++;
+            } else if (s.charAt(i) == ')') {
+                counter--;
+            }
+
+            maxCounter = Math.max(maxCounter, counter);
+        }
+
+        return maxCounter;
     }
 }
