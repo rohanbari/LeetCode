@@ -14,21 +14,31 @@
  limitations under the License.
  */
 
-package org.rohanbari;
+package org.rohanbari.code.April;
 
 import java.util.Stack;
 
 /**
- * This file is dedicated to the problem I am currently working on.
+ * 1544. Make The String Great
  */
-public class Main {
+class MakeStringGreat {
 
-    /**
-     * The main method.
-     *
-     * @param args System arguments
-     */
-    public static void main(String[] args) {
-        System.out.println("Latest solved: 1544");
+    public String makeGood(String s) {
+        Stack<Character> stack = new Stack<>();
+
+        for (int i = 0; i < s.length(); i++) {
+            if (!stack.isEmpty() && Math.abs(stack.peek() - s.charAt(i)) == 32) {
+                stack.pop();
+            } else {
+                stack.push(s.charAt(i));
+            }
+        }
+
+        StringBuilder sb = new StringBuilder();
+        while (!stack.isEmpty()) {
+            sb.append(stack.pop());
+        }
+
+        return sb.reverse().toString();
     }
 }
