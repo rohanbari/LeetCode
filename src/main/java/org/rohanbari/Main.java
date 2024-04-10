@@ -16,8 +16,6 @@
 
 package org.rohanbari;
 
-import java.util.Stack;
-
 /**
  * This file is dedicated to the problem I am currently working on.
  */
