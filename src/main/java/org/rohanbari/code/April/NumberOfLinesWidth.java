@@ -14,20 +14,27 @@
  limitations under the License.
  */
 
-package org.rohanbari;
+package org.rohanbari.code.April;
 
 /**
- * This file is dedicated to the problem I am currently working on.
+ * 806. Number of Lines To Write String
  */
-public class Main {
+class NumberOfLinesWidth {
 
-    /**
-     * The main method.
-     *
-     * @param args System arguments
-     */
-    public static void main(String[] args) {
-        System.out.println("Latest solved: 806");
-        // Main main = new Main();
+    public int[] numberOfLines(int[] widths, String s) {
+        int lines = 1;
+        int width = 0;
+
+        for (int i = 0; i < s.length(); i++) {
+            int currChar = s.charAt(i) - 'a';
+            width += widths[currChar];
+
+            if (width > 100) {
+                lines++;
+                width = widths[currChar];
+            }
+        }
+
+        return new int[] { lines, width };
     }
 }
