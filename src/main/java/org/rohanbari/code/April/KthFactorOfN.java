@@ -14,20 +14,32 @@
  limitations under the License.
  */
 
-package org.rohanbari;
+package org.rohanbari.code.April;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
- * This file is dedicated to the problem I am currently working on.
+ * 1492. The kth Factor of n
  */
-public class Main {
+class KthFactorOfN {
 
     /**
-     * The main method.
-     *
-     * @param args System arguments
+     * Returns the kth factor of N.
+     * 
+     * @param n The number
+     * @param k 1-indexed number
+     * @return kth factor of n
      */
-    public static void main(String[] args) {
-        System.out.println("Latest solved: 1492");
-        // Main main = new Main();
+    public int kthFactor(int n, int k) {
+        List<Integer> factors = new ArrayList<>();
+
+        for (int i = 1; i <= n; i++) {
+            if (n % i == 0) {
+                factors.add(i);
+            }
+        }
+
+        return factors.size() <= k - 1 ? -1 : factors.get(k - 1);
     }
 }
