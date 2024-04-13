@@ -14,20 +14,27 @@
  limitations under the License.
  */
 
-package org.rohanbari;
+package org.rohanbari.code.April;
 
 /**
- * This file is dedicated to the problem I am currently working on.
+ * 125. Valid Palindrome
  */
-public class Main {
+public class ValidAlphaNumPalindrome {
 
     /**
-     * The main method.
-     *
-     * @param args System arguments
+     * Returns true if the alphanumeric-only characters are in palindrome order.
+     * 
+     * @param s The string
+     * @return Is palindrome
      */
-    public static void main(String[] args) {
-        System.out.println("Latest solved: 125");
-        // Main main = new Main();
+    public boolean isPalindrome(String s) {
+        StringBuilder processed = new StringBuilder();
+        for (char ch : s.toCharArray()) {
+            if (Character.isAlphabetic(ch) || Character.isDigit(ch)) {
+                processed.append(Character.toLowerCase(ch));
+            }
+        }
+
+        return processed.toString().equals(processed.reverse().toString());
     }
 }
