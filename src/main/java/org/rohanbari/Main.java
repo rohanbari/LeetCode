@@ -27,7 +27,8 @@ public class Main {
      * @param args System arguments
      */
     public static void main(String[] args) {
-        System.out.println("Latest solved: 125");
+        System.out.println("Latest solved: 136");
         // Main main = new Main();
+        // System.out.println();
     }
 }

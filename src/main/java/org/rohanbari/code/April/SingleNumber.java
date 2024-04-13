@@ -16,25 +16,32 @@
 
 package org.rohanbari.code.April;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
- * 125. Valid Palindrome
+ * 136. Single Number
  */
-class ValidAlphaNumPalindrome {
+class SingleNumber {
 
     /**
-     * Returns true if the alphanumeric-only characters are in palindrome order.
+     * Returns the number that was never repeated in an array.
      * 
-     * @param s The string
-     * @return Is palindrome
+     * @param nums The array
+     * @return The only single number
      */
-    public boolean isPalindrome(String s) {
-        StringBuilder processed = new StringBuilder();
-        for (char ch : s.toCharArray()) {
-            if (Character.isAlphabetic(ch) || Character.isDigit(ch)) {
-                processed.append(Character.toLowerCase(ch));
+    public int singleNumber(int[] nums) {
+        Map<Integer, Integer> hashMap = new HashMap<>();
+        for (int num : nums) {
+            hashMap.put(num, hashMap.getOrDefault(num, 0) + 1);
+        }
+
+        for (var entry : hashMap.entrySet()) {
+            if (entry.getValue() == 1) {
+                return entry.getKey();
             }
         }
 
-        return processed.toString().equals(processed.reverse().toString());
+        return 0;
     }
 }

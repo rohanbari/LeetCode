@@ -16,7 +16,7 @@
 
 package org.rohanbari.code.February;
 
-public class MissingNumber_268 {
+class MissingNumber_268 {
 
     /**
      * Finds the only missing number in an array in O(1).

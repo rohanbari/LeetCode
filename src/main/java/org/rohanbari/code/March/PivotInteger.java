@@ -19,7 +19,7 @@ package org.rohanbari.code.March;
 /**
  * 2485. Find the Pivot Integer
  */
-public class PivotInteger {
+class PivotInteger {
 
     /**
      * Finds the index where sum(1->x) == sum(x->n).

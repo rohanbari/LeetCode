@@ -19,7 +19,7 @@ package org.rohanbari.code.April;
 /**
  * 371. Sum of Two Integers
  */
-public class SumFullAdder {
+class SumFullAdder {
 
     /**
      * Full-adder implementation.

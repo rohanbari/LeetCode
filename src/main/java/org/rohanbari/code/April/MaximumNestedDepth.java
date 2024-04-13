@@ -19,7 +19,7 @@ package org.rohanbari.code.April;
 /**
  * 1614. Maximum Nesting Depth of the Parentheses
  */
-public class MaximumNestedDepth {
+class MaximumNestedDepth {
 
     /**
      * Returns nesting depth of a string.

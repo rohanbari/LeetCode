@@ -19,7 +19,7 @@ package org.rohanbari.code.March;
 /**
  * 19. Remove Nth Element from End
  */
-public class RemoveFromNthEnd {
+class RemoveFromNthEnd {
     public static class ListNode {
         int val;
         ListNode next;

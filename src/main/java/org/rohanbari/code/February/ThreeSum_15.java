@@ -20,7 +20,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ThreeSum_15 {
+class ThreeSum_15 {
 
     public List<List<Integer>> threeSum(int[] nums) {
         int length = nums.length;

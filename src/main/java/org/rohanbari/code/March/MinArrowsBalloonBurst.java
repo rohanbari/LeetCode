@@ -21,7 +21,7 @@ import java.util.Arrays;
 /**
  * 452. Minimum Number of Arrows to Burst Balloons
  */
-public class MinArrowsBalloonBurst {
+class MinArrowsBalloonBurst {
 
     /**
      * Returns the minimum number of arrows that must be shot to burst all
