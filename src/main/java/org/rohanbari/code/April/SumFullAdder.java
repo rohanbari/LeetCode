@@ -14,21 +14,27 @@
  limitations under the License.
  */
 
-package org.rohanbari;
+package org.rohanbari.code.April;
 
 /**
- * This file is dedicated to the problem I am currently working on.
+ * 371. Sum of Two Integers
  */
-public class Main {
+public class SumFullAdder {
 
     /**
-     * The main method.
-     *
-     * @param args System arguments
+     * Full-adder implementation.
+     * 
+     * @param a First value
+     * @param b Second value
+     * @return Addition result
      */
-    public static void main(String[] args) {
-        System.out.println("Latest solved: 371");
-        // Main main = new Main();
-        // System.out.println(main.fullAdder(3, 11));
+    public int fullAdder(int a, int b) {
+        while (b != 0) {
+            int carry = a & b;
+            a = a ^ b;
+            b = carry << 1;
+        }
+
+        return a;
     }
 }
