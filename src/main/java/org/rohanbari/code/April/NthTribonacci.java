@@ -14,19 +14,35 @@
  limitations under the License.
  */
 
-package org.rohanbari;
+package org.rohanbari.code.April;
 
 /**
- * This file is dedicated to the problem I am currently working on.
+ * 1137. N-th Tribonacci Number
  */
-public class Main {
+class NthTribonacci {
 
     /**
-     * The main method.
+     * Finds the nth Tribonacci term.
      * 
-     * @param args System arguments
+     * @param n The required term
+     * @return Value in that term
      */
-    public static void main(String[] args) {
-        System.out.println("Latest solved: 1137th problem.");
+    public int tribonacci(int n) {
+        if (n == 0)
+            return 0;
+        if (n == 1 || n == 2)
+            return 1;
+
+        int[] seq = new int[38];
+
+        seq[0] = 0;
+        seq[1] = seq[2] = 1;
+
+        for (int i = 3; i <= n; i++) {
+            seq[i] = seq[i - 1] + seq[i - 2] + seq[i - 3];
+            System.out.println(seq[i]);
+        }
+
+        return seq[n];
     }
 }
